@@ -1,0 +1,81 @@
+#include <ctime>
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "beep-boop-beep..." << endl;
+    time_t t = time(0);  
+    struct tm * now = localtime( & t );
+    cout << (now->tm_year + 1900) << '-' 
+         << (now->tm_mon + 1) << '-'
+         <<  now->tm_mday
+         << endl;
+      cout << "loading..." << endl;
+      cout << "Hello!!!!" << endl;
+      cout << "this is akwawrd" << endl;
+      cout << "input your name please" << endl;
+      string name;
+      getline(cin,name);
+      cout << "Hello!!! " << name << endl;
+      cin.ignore();
+      cout << "just ask me a question" << endl;
+      cin.ignore();
+      cout << "but to test this out type: open the pod doors" << endl;
+    string doors;
+    
+    getline(cin,doors);
+
+     if(doors == "open the pod doors")
+     cout << "then the cat will get out" << endl;
+     cin.ignore();
+     cout << "ask me anything but," << endl;
+     cin.ignore();
+     cout << "make sure there is no capitals and it is spelled right" << endl;
+     
+     string oneq;
+     
+     if(oneq == "hello")
+     cout << "hi" << endl;
+    
+     else if(oneq == "hi")
+     cout << "hello" << endl;
+     
+     else if(oneq == "what are those")
+     cout << "I dont't were shoes" << endl;
+    
+     else if(oneq == "deez nuts")
+     cout << "gotty" << endl;
+    
+     else if(oneq == "orange rythems with pikle")
+     cout << "Yes it does" << endl;
+     
+     else if(oneq == "who are you")
+     cout << "a computer" << endl;
+    
+     else if(oneq == "whats your favorite color")
+     cout << "purple" << endl;
+     
+     else if(oneq == "whats 9+10")
+     cout << "1738 becuase 38-17 = 21" << endl;
+     
+     else if(oneq == "are you sure")
+     cout << "yes" << endl;
+     
+     else if(oneq == "taco")
+     cout << "burrito" << endl;
+     
+     else if(oneq == "burrito")
+     cout << "taco" < endl;
+     
+     else if(oneq == "burritos")
+     cout << "tacos" << endl;
+     
+     else if(oneq == "tacos")
+     cout << "taco cat spelled backwards is taco cat" << endl;
+     
+     else if(oneq == "taco cat")
+     cout << "thats a palendrone" << endl;
+     
+     
+     
+}
